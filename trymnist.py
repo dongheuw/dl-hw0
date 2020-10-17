@@ -20,9 +20,10 @@ batch = 128
 iters = 5000
 rate = .01
 momentum = .9
-decay = .0
+decay = .0001
 
-m = softmax_model()
+# m = softmax_model()
+m = neural_net()
 print("training...")
 train_image_classifier(m, train, batch, iters, rate, momentum, decay)
 print("done")
